@@ -5,7 +5,7 @@ using System.Text;
 using MsgPack;
 using MsgPack.Serialization;
 
-namespace Serilog.Sinks.Fluentd
+namespace AlpineComputence.Serilog.Sinks.Fluentd
 {
     internal class FluentdEmitter
     {

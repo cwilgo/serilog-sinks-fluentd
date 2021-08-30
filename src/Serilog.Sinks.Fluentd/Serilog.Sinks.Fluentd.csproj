@@ -1,13 +1,15 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
+    <Version>0.4.1-beta.20210830114634</Version>
+    <AssemblyName>AlpineComputence.Serilog.Sinks.Fluentd</AssemblyName>
+    <RootNamespace>AlpineComputence.Serilog.Sinks.Fluentd</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Authors>Borys Iermakov</Authors>
-    <AssemblyTitle>Serilog.Sinks.Fluentd</AssemblyTitle>
-    <PackageReleaseNotes>0.4.0</PackageReleaseNotes>
+    <Authors>Wil Tetz / Borys Iermakov</Authors>
+    <AssemblyTitle>AlpineComputence.Serilog.Sinks.Fluentd</AssemblyTitle>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Description>
       Serilog adapter for Fluentd
@@ -15,8 +17,13 @@
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
     <PackageTags>serilog;fluentd;sink;sinks;serilog sinks;serilog sink</PackageTags>
     <PackageIconUrl>http://serilog.net/images/serilog-sink-nuget.png</PackageIconUrl>
-    <RepositoryUrl>https://github.com/borisermakof/serilog-sinks-fluentd</RepositoryUrl>
+    <RepositoryUrl>https://github.com/cwilgo/serilog-sinks-fluentd</RepositoryUrl>
     <PackageProjectUrl>https://serilog.net/</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>embedded</DebugType>
   </PropertyGroup>
   
   <ItemGroup>

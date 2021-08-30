@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Serilog.Events;
 using Serilog.Sinks.PeriodicBatching;
 
-namespace Serilog.Sinks.Fluentd
+namespace AlpineComputence.Serilog.Sinks.Fluentd
 {
     public class FluentdSink : PeriodicBatchingSink
     {

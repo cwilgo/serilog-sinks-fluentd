@@ -2,7 +2,7 @@
 using System.Net.Sockets;
 using System.Threading.Tasks;
 
-namespace Serilog.Sinks.Fluentd.Sinks.Fluentd.Endpoints
+namespace AlpineComputence.Serilog.Sinks.Fluentd.Endpoints
 {
     class TcpEndpoint : IEndpoint
     {

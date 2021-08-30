@@ -1,6 +1,6 @@
 ﻿using Serilog.Configuration;
 using Serilog.Events;
-using Serilog.Sinks.Fluentd;
+using AlpineComputence.Serilog.Sinks.Fluentd;
 
 namespace Serilog
 {

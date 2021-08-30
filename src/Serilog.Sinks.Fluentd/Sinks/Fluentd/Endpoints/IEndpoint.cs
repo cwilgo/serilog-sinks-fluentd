@@ -2,7 +2,7 @@
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Serilog.Sinks.Fluentd.Sinks.Fluentd.Endpoints
+namespace AlpineComputence.Serilog.Sinks.Fluentd.Endpoints
 {
     interface IEndpoint : IDisposable
     {

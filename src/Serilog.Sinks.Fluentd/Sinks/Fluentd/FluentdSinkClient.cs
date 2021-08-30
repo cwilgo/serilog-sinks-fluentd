@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Serilog.Debugging;
 using Serilog.Events;
-using Serilog.Sinks.Fluentd.Sinks.Fluentd.Endpoints;
+using AlpineComputence.Serilog.Sinks.Fluentd.Endpoints;
 
-namespace Serilog.Sinks.Fluentd
+namespace AlpineComputence.Serilog.Sinks.Fluentd
 {
     public class FluentdSinkClient : IDisposable
     {

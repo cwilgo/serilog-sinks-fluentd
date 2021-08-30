@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Serilog.Sinks.Fluentd
+namespace AlpineComputence.Serilog.Sinks.Fluentd
 {
     public static class ReflectionHelper
     {

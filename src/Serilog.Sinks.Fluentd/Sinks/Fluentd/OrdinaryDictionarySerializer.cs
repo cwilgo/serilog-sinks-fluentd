@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using MsgPack;
 using MsgPack.Serialization;
 
-namespace Serilog.Sinks.Fluentd
+namespace AlpineComputence.Serilog.Sinks.Fluentd
 {
     internal class OrdinaryDictionarySerializer : MessagePackSerializer<IDictionary<string, object>>
     {

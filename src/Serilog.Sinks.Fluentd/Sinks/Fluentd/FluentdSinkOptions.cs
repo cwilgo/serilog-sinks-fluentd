@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Serilog.Sinks.Fluentd
+namespace AlpineComputence.Serilog.Sinks.Fluentd
 {
     public class FluentdSinkOptions
     {
