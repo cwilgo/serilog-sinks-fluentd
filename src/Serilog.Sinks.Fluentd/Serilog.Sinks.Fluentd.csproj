@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
-    <Version>0.4.1-beta.20210830114634</Version>
+    <Version>0.4.1-beta.20210905121518</Version>
     <AssemblyName>AlpineComputence.Serilog.Sinks.Fluentd</AssemblyName>
     <RootNamespace>AlpineComputence.Serilog.Sinks.Fluentd</RootNamespace>
   </PropertyGroup>

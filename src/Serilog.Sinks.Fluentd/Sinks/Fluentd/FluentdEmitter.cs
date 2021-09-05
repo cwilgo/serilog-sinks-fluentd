@@ -16,7 +16,7 @@ namespace AlpineComputence.Serilog.Sinks.Fluentd
         public FluentdEmitter(Stream stream)
         {
             _serializationContext = new SerializationContext(PackerCompatibilityOptions.PackBinaryAsRaw);
-            _serializationContext.Serializers.Register(new OrdinaryDictionarySerializer());
+            _serializationContext.Serializers.Register(new OrdinaryDictionarySerializer(_serializationContext));
             _packer = Packer.Create(stream, PackerCompatibilityOptions.PackBinaryAsRaw);
         }
 
