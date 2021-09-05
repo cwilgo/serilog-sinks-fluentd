@@ -7,9 +7,13 @@ namespace Serilog.Sinks.Fluentd
 {
     internal class OrdinaryDictionarySerializer : MessagePackSerializer<IDictionary<string, object>>
     {
-        public OrdinaryDictionarySerializer() : base(SerializationContext.Default)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ownerContext">ownerContext should be match the context to be registered</param>
+        public OrdinaryDictionarySerializer(SerializationContext ownerContext)
+            : base(ownerContext)
         {
-
         }
 
         protected override void PackToCore(Packer packer, IDictionary<string, object> objectTree)
@@ -18,9 +22,7 @@ namespace Serilog.Sinks.Fluentd
             foreach (var pair in objectTree)
             {
                 packer.PackString(pair.Key);
-                var serializationContext = new SerializationContext(packer.CompatibilityOptions);
-                serializationContext.Serializers.Register(this);
-                packer.Pack(pair.Value, serializationContext);
+                packer.Pack(pair.Value, OwnerContext);
             }
         }
 
